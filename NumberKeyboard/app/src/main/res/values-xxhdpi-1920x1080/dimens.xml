@@ -1,0 +1,7 @@
+<resources>
+    <!-- keyboard number size -->
+    <dimen name="number_size_w">110dp</dimen>
+    <dimen name="number_size_h">110dp</dimen>
+    <dimen name="number_check_w">230dp</dimen>
+    <dimen name="number_check_h">110dp</dimen>
+</resources>
