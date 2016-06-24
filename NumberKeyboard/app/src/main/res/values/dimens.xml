@@ -4,8 +4,5 @@
     <dimen name="activity_vertical_margin">16dp</dimen>
 
     <!-- keyboard number size -->
-    <dimen name="number_size_w">80dp</dimen>
-    <dimen name="number_size_h">80dp</dimen>
-    <dimen name="number_check_w">200dp</dimen>
-    <dimen name="number_check_h">80dp</dimen>
+    <dimen name="number_size_wh">90dp</dimen>
 </resources>

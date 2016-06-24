@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
-              android:alpha="0.7"
+              android:alpha="0.9"
               android:background="@color/pagebg_gray"
               android:orientation="vertical"
     >
@@ -13,22 +13,20 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:orientation="horizontal"
-        android:paddingTop="10dp"
-        android:paddingBottom="10dp"
         >
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/edittext_del"
+            android:src="@drawable/nb_arrow"
             />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
         android:orientation="vertical"
+        android:layout_weight="1"
         android:weightSum="4"
         >
 
@@ -48,10 +46,11 @@
 
                 <Button
                     android:id="@+id/btn1"
-                    android:layout_width="@dimen/number_size_w"
-                    android:layout_height="@dimen/number_size_h"
+                    android:layout_width="@dimen/number_size_wh"
+                    android:layout_height="@dimen/number_size_wh"
                     android:background="@drawable/number_btn_bg"
                     android:text="1"
+                    android:textColor="@color/kb_color"
                     android:textSize="36sp"
                     />
             </LinearLayout>
@@ -66,10 +65,11 @@
 
                 <Button
                     android:id="@+id/btn2"
-                    android:layout_width="@dimen/number_size_w"
-                    android:layout_height="@dimen/number_size_h"
+                    android:layout_width="@dimen/number_size_wh"
+                    android:layout_height="@dimen/number_size_wh"
                     android:background="@drawable/number_btn_bg"
                     android:text="2"
+                    android:textColor="@color/kb_color"
                     android:textSize="36sp"
                     />
             </LinearLayout>
@@ -83,10 +83,11 @@
 
                 <Button
                     android:id="@+id/btn3"
-                    android:layout_width="@dimen/number_size_w"
-                    android:layout_height="@dimen/number_size_h"
+                    android:layout_width="@dimen/number_size_wh"
+                    android:layout_height="@dimen/number_size_wh"
                     android:background="@drawable/number_btn_bg"
                     android:text="3"
+                    android:textColor="@color/kb_color"
                     android:textSize="36sp"
                     />
             </LinearLayout>
@@ -109,10 +110,11 @@
 
                 <Button
                     android:id="@+id/btn4"
-                    android:layout_width="@dimen/number_size_w"
-                    android:layout_height="@dimen/number_size_h"
+                    android:layout_width="@dimen/number_size_wh"
+                    android:layout_height="@dimen/number_size_wh"
                     android:background="@drawable/number_btn_bg"
                     android:text="4"
+                    android:textColor="@color/kb_color"
                     android:textSize="36sp"
                     />
             </LinearLayout>
@@ -126,10 +128,11 @@
 
                 <Button
                     android:id="@+id/btn5"
-                    android:layout_width="@dimen/number_size_w"
-                    android:layout_height="@dimen/number_size_h"
+                    android:layout_width="@dimen/number_size_wh"
+                    android:layout_height="@dimen/number_size_wh"
                     android:background="@drawable/number_btn_bg"
                     android:text="5"
+                    android:textColor="@color/kb_color"
                     android:textSize="36sp"
                     />
             </LinearLayout>
@@ -143,10 +146,11 @@
 
                 <Button
                     android:id="@+id/btn6"
-                    android:layout_width="@dimen/number_size_w"
-                    android:layout_height="@dimen/number_size_h"
+                    android:layout_width="@dimen/number_size_wh"
+                    android:layout_height="@dimen/number_size_wh"
                     android:background="@drawable/number_btn_bg"
                     android:text="6"
+                    android:textColor="@color/kb_color"
                     android:textSize="36sp"
                     />
             </LinearLayout>
@@ -169,10 +173,11 @@
 
                 <Button
                     android:id="@+id/btn7"
-                    android:layout_width="@dimen/number_size_w"
-                    android:layout_height="@dimen/number_size_h"
+                    android:layout_width="@dimen/number_size_wh"
+                    android:layout_height="@dimen/number_size_wh"
                     android:background="@drawable/number_btn_bg"
                     android:text="7"
+                    android:textColor="@color/kb_color"
                     android:textSize="36sp"
                     />
             </LinearLayout>
@@ -186,10 +191,11 @@
 
                 <Button
                     android:id="@+id/btn8"
-                    android:layout_width="@dimen/number_size_w"
-                    android:layout_height="@dimen/number_size_h"
+                    android:layout_width="@dimen/number_size_wh"
+                    android:layout_height="@dimen/number_size_wh"
                     android:background="@drawable/number_btn_bg"
                     android:text="8"
+                    android:textColor="@color/kb_color"
                     android:textSize="36sp"
                     />
             </LinearLayout>
@@ -203,10 +209,11 @@
 
                 <Button
                     android:id="@+id/btn9"
-                    android:layout_width="@dimen/number_size_w"
-                    android:layout_height="@dimen/number_size_h"
+                    android:layout_width="@dimen/number_size_wh"
+                    android:layout_height="@dimen/number_size_wh"
                     android:background="@drawable/number_btn_bg"
                     android:text="9"
+                    android:textColor="@color/kb_color"
                     android:textSize="36sp"
                     />
             </LinearLayout>
@@ -229,10 +236,11 @@
 
                 <Button
                     android:id="@+id/btn0"
-                    android:layout_width="@dimen/number_size_w"
-                    android:layout_height="@dimen/number_size_h"
+                    android:layout_width="@dimen/number_size_wh"
+                    android:layout_height="@dimen/number_size_wh"
                     android:background="@drawable/number_btn_bg"
                     android:text="0"
+                    android:textColor="@color/kb_color"
                     android:textSize="36sp"
                     />
             </LinearLayout>
@@ -246,8 +254,10 @@
 
                 <Button
                     android:id="@+id/btn_check"
-                    android:layout_width="@dimen/number_check_w"
-                    android:layout_height="@dimen/number_check_h"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/number_size_wh"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
                     android:background="@drawable/btn_check_bg"
                     android:text="验证"
                     android:textColor="@color/white"
