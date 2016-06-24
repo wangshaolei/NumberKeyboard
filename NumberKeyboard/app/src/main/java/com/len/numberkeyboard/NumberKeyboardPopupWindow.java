@@ -62,6 +62,7 @@ public class NumberKeyboardPopupWindow {
         View popupView = LayoutInflater.from(mContext).inflate(R.layout.layout_number_keyboard, null);
         ButterKnife.bind(this, popupView);
         PopupWindow keyboardPopupwindow = new PopupWindow(popupView, LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.MATCH_PARENT, false);
+		keyboardPopupwindow.setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_RESIZE);
         keyboardPopupwindow.setFocusable(false);
         keyboardPopupwindow.setOutsideTouchable(false);
         return keyboardPopupwindow;
