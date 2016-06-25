@@ -15,34 +15,9 @@ import butterknife.OnClick;
  * Created by Shaolei on 2016/6/14.
  */
 public class NumberKeyboardPopupWindow {
-    @BindView(R.id.ll_close)
-    LinearLayout llClose;
-    @BindView(R.id.btn1)
-    Button btn1;
-    @BindView(R.id.btn2)
-    Button btn2;
-    @BindView(R.id.btn3)
-    Button btn3;
-    @BindView(R.id.btn4)
-    Button btn4;
-    @BindView(R.id.btn5)
-    Button btn5;
-    @BindView(R.id.btn6)
-    Button btn6;
-    @BindView(R.id.btn7)
-    Button btn7;
-    @BindView(R.id.btn8)
-    Button btn8;
-    @BindView(R.id.btn9)
-    Button btn9;
-    @BindView(R.id.btn0)
-    Button btn0;
-    @BindView(R.id.btn_check)
-    Button btnCheck;
-
+    
     private static Context mContext;
     private static NumberKeyboardPopupWindow mPopupWindow;
-    private String number = "";
     private NumberKeyboardUtil.OnPopuWindowListener listener;
 
     public NumberKeyboardPopupWindow() {
@@ -75,45 +50,35 @@ public class NumberKeyboardPopupWindow {
             case R.id.ll_close:
                 listener.dismiss();
                 break;
-            case R.id.btn1:
-                number = "1";
-                listener.insertStr(number);
+            case R.id.btn1:       
+                listener.insertStr("1");
                 break;
             case R.id.btn2:
-                number = "2";
-                listener.insertStr(number);
+                listener.insertStr("2");
                 break;
             case R.id.btn3:
-                number = "3";
-                listener.insertStr(number);
+                listener.insertStr("3");
                 break;
             case R.id.btn4:
-                number = "4";
-                listener.insertStr(number);
+                listener.insertStr("4");
                 break;
             case R.id.btn5:
-                number = "5";
-                listener.insertStr(number);
+                listener.insertStr("5");
                 break;
             case R.id.btn6:
-                number = "6";
-                listener.insertStr(number);
+                listener.insertStr("6");
                 break;
             case R.id.btn7:
-                number = "7";
-                listener.insertStr(number);
+                listener.insertStr("7");
                 break;
             case R.id.btn8:
-                number = "8";
-                listener.insertStr(number);
+                listener.insertStr("8");
                 break;
             case R.id.btn9:
-                number = "9";
-                listener.insertStr(number);
+                listener.insertStr("9");
                 break;
             case R.id.btn0:
-                number = "0";
-                listener.insertStr(number);
+                listener.insertStr("0");
                 break;
             case R.id.btn_check:
                 listener.check();

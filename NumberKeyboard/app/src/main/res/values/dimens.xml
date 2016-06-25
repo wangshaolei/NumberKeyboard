@@ -4,5 +4,5 @@
     <dimen name="activity_vertical_margin">16dp</dimen>
 
     <!-- keyboard number size -->
-    <dimen name="number_size_wh">90dp</dimen>
+    <dimen name="number_size_wh">60dp</dimen>
 </resources>
