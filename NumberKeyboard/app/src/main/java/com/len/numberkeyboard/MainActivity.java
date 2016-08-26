@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private void initView(){
         etCode = ButterKnife.findById(inputLayout, R.id.et_code);
-        keyboardPopupwindow = NumberKeyboardPopupWindow.getInstance(this).onCreate(this);
+        keyboardPopupwindow = NumberKeyboardPopupWindow.getInstance(this).onCreate(this, llTop);
         NumberKeyboardUtil.getInstance().setOnTouchListener(etCode, keyboardPopupwindow, this);
         NumberKeyboardUtil.getInstance().disableCopyAndPaste(etCode);
     }
