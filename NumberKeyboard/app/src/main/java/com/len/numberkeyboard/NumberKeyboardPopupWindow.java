@@ -4,11 +4,9 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.WindowManager;
-import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.PopupWindow;
 
-import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
@@ -33,17 +31,11 @@ public class NumberKeyboardPopupWindow {
         return mPopupWindow;
     }
 
-    public PopupWindow onCreate(NumberKeyboardUtil.OnPopuWindowListener listener, View anchorView) {
+    public PopupWindow onCreate(NumberKeyboardUtil.OnPopuWindowListener listener) {
         this.listener = listener;
         View popupView = LayoutInflater.from(mContext).inflate(R.layout.layout_number_keyboard, null);
         ButterKnife.bind(this, popupView);
-        int widthMeasureSpec = View.MeasureSpec.makeMeasureSpec(0,View.MeasureSpec.UNSPECIFIED);
-        int heightMeasureSpec = View.MeasureSpec.makeMeasureSpec(0, View.MeasureSpec.UNSPECIFIED);
-        anchorView.measure(widthMeasureSpec, heightMeasureSpec);
-        //height
-        int screenHeight = mContext.getResources().getDisplayMetrics().heightPixels;
-        int statusHeight = mContext.getResources().getDimensionPixelSize(mContext.getResources().getIdentifier("status_bar_height", "dimen", "android"));
-        PopupWindow keyboardPopupwindow = new PopupWindow(popupView, LinearLayout.LayoutParams.MATCH_PARENT, screenHeight - screenHeight - anchorView.getMeasuredHeight(), false);
+        PopupWindow keyboardPopupwindow = new PopupWindow(popupView, LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.MATCH_PARENT, false);
         keyboardPopupwindow.setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_RESIZE);
         keyboardPopupwindow.setFocusable(false);
         keyboardPopupwindow.setOutsideTouchable(false);
