@@ -1,12 +1,12 @@
 # NumberKeyboard
-##Custom keyboardview with two ways:
+## Custom keyboardview with two ways:
 
 1. Override systems's sys.xml of keyboardview
 2. Custom the layout and slove the touchListener's question and so on...
 
-###For example: MeiTuan's Merchant or NuoMi's Merchant app, Number Keyboard
+### For example: MeiTuan's Merchant or NuoMi's Merchant app, Number Keyboard
 
-####Show parts codes:
+#### Show parts codes:
 
 ```java
     public class MainActivity extends AppCompatActivity implements View.OnClickListener, NumberKeyboardUtil.OnPopuWindowListener
@@ -45,7 +45,7 @@
     }
 ```
 
-#Thanks:
+# Thanks:
 
 [Jakewharton-Butterknife](https://github.com/JakeWharton/butterknife)
 
